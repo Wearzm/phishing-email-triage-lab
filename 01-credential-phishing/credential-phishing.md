@@ -12,16 +12,16 @@ The email impersonates Microsoft 365 Security, claims that unusual sign-in activ
 
 ## Evidence
 
-1. **Sender impersonation** - The display name is Microsoft 365 Security, And the sender address is security-alert@micros0ft-support[.]com, Which it uses 0 zero rather than o.
+1. **Sender impersonation.** - The display name is Microsoft 365 Security, And the sender address is security-alert@micros0ft-support[.]com, Which it uses 0 zero rather than o.
 
-2. **Email authentication** — header reports
+2. **Email authentication.** - header reports
 spf=fail for the sender domain smtp.mailfrom=mailer-x7.top And the IP '203[.]0[.]113[.]45';
 dkim=none (message not signed);
 dmarc=fail for the sender domain 'micros0ft-support[.]com'
 
-3. **Misleading links** — the visible URL hxxps[:]//login[.]microsoftonline[.]com but The hyperlink to it is  href="hxxp[:]//203[.]0[.]113[.]45/login/office365/verify", **The keep my password link** href="hxxps[:]//bit[.]ly/3xR9kQp".
+3. **Misleading links.** - the visible URL hxxps[:]//login[.]microsoftonline[.]com but The hyperlink to it is  href="hxxp[:]//203[.]0[.]113[.]45/login/office365/verify", **The keep my password link** href="hxxps[:]//bit[.]ly/3xR9kQp".
 
-4. **HTML attachment** - filename= "Password_Reset_Form.pdf.html" Its contains a form that asks for an email and password to submit your Credential to the Misleading link.
+4. **HTML attachment.** - 'Password_Reset_Form.pdf.html' contains a form that asks for an email and password to submits credentials to the same IP as the misleading link, using a different URL path
 
 
 
